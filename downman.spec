@@ -1,13 +1,12 @@
 Summary:	Download Manager is a suite of programs to download files
 Summary(pl):	Download Manager jest zbiorem programów do ¶ci±gania plików
 Name:		downman
-Version:	0.0.2
+Version:	0.0.3
 Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
-# Source0-md5:	d9a4a9f9a958f88f43bf2a75d425a5da
-Patch0:		%{name}-ac.patch
+# Source0-md5:	6ca50ea3b25a6fabbcb59aa103826be4
 URL:		http://downman.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -25,7 +24,6 @@ Download Manager jest zbiorem programów do ¶ci±gania plików.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 rm -f missing
@@ -49,3 +47,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS NEWS
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/gdownman
+%{_desktopdir}/*
+%{_pixmapsdir}/*
