@@ -47,5 +47,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS NEWS
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/gdownman
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
 %{_pixmapsdir}/*
