@@ -1,5 +1,5 @@
 Summary:	Download Manager is a suite of programs to download files
-Summary(pl.UTF-8):   Download Manager jest zbiorem programów do ściągania plików
+Summary(pl.UTF-8):	Download Manager jest zbiorem programów do ściągania plików
 Name:		downman
 Version:	0.0.5
 Release:	1
